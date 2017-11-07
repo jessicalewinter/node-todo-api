@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +22,11 @@
     "url": "https://github.com/jessicalewinter/node-todo-api/issues"
   },
   "homepage": "https://github.com/jessicalewinter/node-todo-api#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
+  }
 }

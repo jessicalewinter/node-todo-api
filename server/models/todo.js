@@ -5,7 +5,6 @@ var Todo = mongoose.model('Todo', {
         type: String,
         required: true,
         minlength: 1,
-        maxlength: 20,
         trim: true
     },
     completed: {
@@ -18,6 +17,4 @@ var Todo = mongoose.model('Todo', {
     }
 });
 
-module.exports = {
-    Todo: Todo
-}
+module.exports = {Todo};
